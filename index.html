@@ -1,0 +1,24 @@
+<!doctype html>
+<html>
+  <head></head>
+  <body>
+
+    <div bb-repeat="person in people">
+      <p><%= person.name %></p>
+    </div>
+    
+    <input id="new-member" type="text">
+    <button type="button" id="new-button">New Study Group Member</button>
+    <br>
+    <button type="button" id="remove-recent">Remove Most Recent Study Group Member</button>
+
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/underscore.js/1.6.0/underscore-min.js"></script>
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.0/jquery.min.js"></script>
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/backbone.js/1.1.2/backbone-min.js"></script>
+    <script src="scripts/array.js"></script>
+    <script src="scripts/watch.js"></script>
+    <script src="scripts/dom/bb-repeat.js"></script>
+    <script src="scripts/models/person.js"></script>
+    <script src="scripts/controllers/main.js"></script>
+  </body>
+</html>
