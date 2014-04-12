@@ -8,7 +8,7 @@ app.compileBBRepeat = (function() {
       var childScopeName = repeatedArg.replace(/ in \w+/, '');
       var parentScopeName = repeatedArg.replace(/\w+ in /, '');
       var template = DOMChunk[0].innerHTML.toString();
-      template = template.replace(/\&lt\;/, '<').replace(/\&gt\;/, '>');
+      template = template.replace(/\&lt\;/g, '<').replace(/\&gt\;/g, '>');
       template = _.template(template);
       var parentScopeProp = $scope[parentScopeName];
       if (parentScopeProp) {
