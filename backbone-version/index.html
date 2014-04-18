@@ -1,0 +1,27 @@
+<div bb-app="app">
+    <div bb-repeat="book in books">
+        <p>
+            {{book.title}} by {{book.author}}
+            <button remove-item type='button'>Remove Book</button>
+        </p>
+    </div>
+    
+    <p mad-king>Am I the mad king?</p>
+    <input id="book-title" type="text">
+    <input id="book-author" type="text">
+    <button type="button" id="addBook">Add Book</button>
+    <button type="button" id="changeBook">Change Book</button>
+    <button type="button" id="clearForm">Clear Form</button>
+
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.1-beta1/jquery.min.js"></script>
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/underscore.js/1.6.0/underscore-min.js"></script>
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/backbone.js/1.1.2/backbone-min.js"></script>
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/handlebars.js/2.0.0-alpha.2/handlebars.min.js"></script>
+    <script src="scripts/watch.js"></script>
+    <script src="scripts/compile-bb-repeat.js"></script>
+    <script src="scripts/config.js"></script>
+    <script src="scripts/directive.js"></script>
+    <script src="scripts/views/item-view.js"></script>
+    <script src="scripts/views/collection-view.js"></script>
+    <script src="scripts/controllers/main.js"></script>
+</div>
